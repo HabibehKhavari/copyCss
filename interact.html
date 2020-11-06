@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interact</title>
+    
+</head>
+<body>
+    <h3 id="title">Habibeh</h3>
+    <p>Greetings from odyssea</p>
+    <form >
+    <input type="text" name="myName" id="myName">
+    <input type="button" id="confrimButton" value="confrim" onclick="changeTheTitle()">
+    </form>
+    <script>
+        function changeTheTitle(){
+            document.getElementById("title").style.backgroundColor="#ff00ff";
+            document.getElementById("title").style.Color="#ffffff";
+            document.getElementById("confrimButton").value="press me";
+            var newNameh=document.getElementById("myName").value;
+            titleElement.innerHTML= newNameh;
+
+        }
+        window.alert("the title is"+document.getElementById("title").innerHTML);
+        //var name = window.prompt("what is your name?")
+        //var el = document.getElementById("title").innerHTML=window.prompt("what is your name?");
+        //window.alert("the title is"+document.getElementById("title").innerHTML);
+        //el.innerHTML="Antonis";
+    </script>
+</body>
+</html>
